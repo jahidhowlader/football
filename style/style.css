@@ -1,10 +1,14 @@
 :root {
-    --primary-background: #0F172A;
+    /* --primary-background: #0F172A; */
     --primary-text: #0F172A
 }
 
 * {
     color: var(--primary-text);
+}
+
+.pink {
+    background: #FEB6B9;
 }
 
 li{
@@ -20,10 +24,6 @@ li{
     height: 100vh;
     margin: 10px;
     border-radius: 8px;
-}
-
-.primary-background{
-    background: var(--primary-background);
 }
 
 #hamburger{

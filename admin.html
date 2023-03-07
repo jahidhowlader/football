@@ -6,17 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- External Style Sheet -->
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body class="container mx-auto">
-    <header>
+<body class="container mx-auto p-2">
+    <header class="pink p-2 rounded">
+        <nav class="flex justify-between items-end">
+            <div>
+                <h1 class="text-3xl font-bold">Logo</h1>
+            </div>
+            <div>
+                <div id="myNav" class="overlay">
 
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="index.html">Dashboard</a>
+                        <a href="admin.html">Admin</a>
+                        <a href="global-ranking.html">Global</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+                </div>
+
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span onclick="openNav()"><i class="fa-solid fa-bars text-3xl"></i></span>
+            </div>
+        </nav>
     </header>
 
     <section>
-        
+
+
     </section>
+
+    <!-- Script File -->
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/e75298b615.js" crossorigin="anonymous"></script>
+
+    <!-- External Script File -->
+    <script src="script/app.js"></script>
+
 
 </body>
 
