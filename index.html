@@ -10,14 +10,30 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body class="container mx-auto primary-background p-5">
-    <header>
+<body class="container mx-auto primary-background p-2">
+    <header class="bg-white p-2 rounded">
         <nav class="flex justify-between items-end">
             <div>
                 <h1 class="text-3xl">Logo</h1>
             </div>
-            <div id="menu">
-                <i class="fa-solid fa-bars text-3xl"></i>
+            <div>
+                <div id="myNav" class="overlay">
+
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+                </div>
+
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span onclick="openNav()"><i class="fa-solid fa-bars text-3xl"></i></span>
             </div>
         </nav>
     </header>
